@@ -1,0 +1,45 @@
+宋雨琦（薄荷舞台）宠物动画 · 生成记录
+
+工具：内置 image_gen.imagegen。角色动作由图像生成工具制作；Python 仅用于图集定位、统一尺寸、排列、编码和预览。
+参考：用户提供 OIP-C.webp 中央人物，以及已确认的 yuqi-chibi-concept-v1.png。
+
+首次动画图集生成提示词（原文）：
+
+Use case: stylized-concept / production sprite animation.
+Create ONE complete Codex desktop pet v1 SPRITE ATLAS from the supplied approved character.
+
+INPUT 1 is a strict LAYOUT GUIDE, a 1536 x 1872 canvas with 8 columns x 9 rows. INPUT 2 is the exact approved CHARACTER AND ART STYLE reference. Preserve the character from input 2 throughout all frames. Populate the layout guide and remove all its guide lines, box borders, numbers, labels, gray fills and white background. The final atlas must have genuine transparent alpha.
+
+OUTPUT GEOMETRY IS CRITICAL: exactly 1536 x 1872 pixels. Exactly 8 equally sized columns and 9 equally sized rows; each cell 192 x 208 pixels. No extra row, gutter, outside margin, heading, legend or caption. Place each complete character strictly INSIDE its cell, centered horizontally, with room for hands, hair and boots; normally feet near y=194 within the cell. Character height about 170 pixels, consistent scale, camera and proportions across the entire atlas. No part may cross a cell edge. Frame order is left to right.
+
+CHARACTER: the single chibi idol shown in input 2. Same softly rounded face, brown eyes, long center-parted ash/light-brown hair, small pink and mint flower hair clips, white headset microphone, mint/turquoise sleeveless stage top with a pale-yellow chest panel, matching turquoise skirt, white ankle boots. Same polished soft 2D illustration, clean dark outlines, pastel shading and friendly personality. Slightly simplified details suitable for tiny desktop rendering, but preserve this approved look. Every cell contains the same girl, not different characters. Do not add text to the outfit.
+
+ANIMATION ROWS, from top to bottom, exact used-cell counts:
+Row 1: IDLE, 6 frames in columns 1-6. Gentle breathing, eyes open / half blink / closed blink / reopen, very subtle hair sway. Calm front-facing stance. Columns 7-8 completely empty transparent.
+Row 2: WALK / RUN RIGHT, 8 frames in columns 1-8. Face right in 3/4 or profile view. A clearly articulated looping gait with alternating legs and opposite arm swings, boots lifting and contacting the same ground line. Hair and skirt follow the steps naturally. Do not repeat one rigid pose.
+Row 3: WALK / RUN LEFT, 8 frames in columns 1-8. Same smooth gait facing LEFT. Correct left-facing head, body, feet and movement.
+Row 4: WAVE, 4 frames in columns 1-4. Front-facing, hand lifts, waves in two positions, friendly smile. Columns 5-8 empty transparent.
+Row 5: JUMP, 5 frames in columns 1-5. Crouch / takeoff / airborne peak with bent knees / descent / soft landing. Show actual changing limb poses and vertical movement. Keep every boot and hair tip within each cell. Columns 6-8 empty transparent.
+Row 6: STUMBLE AND RECOVER, 8 frames in columns 1-8. A cute harmless small stumble: surprised stance, off-balance, lower into a sitting pose, bashful smile, push back up, ready stance. Graceful fully clothed character, no injury.
+Row 7: WAIT, 6 frames in columns 1-6. Sit comfortably with skirt arranged modestly, subtle head tilt and blink, briefly sleepy then attentive. Columns 7-8 empty transparent.
+Row 8: RUN / WORKING, 6 frames in columns 1-6. Energetic quick running in a front-right 3/4 view with clear alternating arms and legs. Columns 7-8 empty transparent.
+Row 9: THINK / REVIEW, 6 frames in columns 1-6. Front-facing thoughtful standing pose, hand near chin, glance sideways, blink, small confident nod. Columns 7-8 empty transparent.
+
+There are 57 populated cells and 15 completely empty cells. Each populated cell is ONE animation frame, never a pose collage. Keep faces, hairstyle, clothing, proportions, illustration quality and sprite scale consistent. Smooth sequential pose changes within each row. Keep all background and unused cells genuinely transparent. No floor, shadows, gradients, glow, graphic effects, scenery, text, labels, grid lines or watermark. This is an actual reusable sprite atlas, not a poster or a static character repeated.
+
+帧间留白修正提示词（原文）：
+
+Edit the sprite atlas in input 1 to fix its PACKING ONLY. Input 2 is the approved character design. Input 3 is the 8-column, 9-row layout guide.
+
+Keep the same single chibi girl, same face and hair, same mint/turquoise top with yellow panel, matching skirt, white boots, floral hair clips and white headset mic. Keep the 57 distinct animation poses and their exact row ordering. Do not change the art style.
+
+The current atlas is too crowded: hair and limbs from adjacent figures touch, including wave/jump rows and the first column of the bottom three rows. FIX THIS by making every complete figure visibly SMALLER and giving every figure a fully transparent clear moat of at least 15 pixels on ALL FOUR sides of its own cell. No adjacent characters may touch or overlap, horizontally or vertically. All hair, hands, skirts and boots must remain inside their own cell, and every figure must be complete. The empty space is essential, not optional.
+
+Grid must be EXACTLY 8 equal columns and 9 equal rows over the whole canvas. Use exact 1536 x 1872 resolution if supported, with 192 x 208 cells. Figure standing height no greater than 145 pixels inside each 208-pixel-high cell; do not enlarge to fill the cell. Maintain consistent character/head size, rather than stretching seated poses. Center each figure horizontally; standing feet near y=188 in each cell. No margins or gutters outside the grid. All borders, background and gaps must be genuinely transparent alpha, without any glow, shadow or color cloud.
+
+Exact row occupancy: 6,8,8,4,5,8,6,6,6 figures. Always fill columns from the LEFT. Leave unused trailing cells absolutely empty:
+1 idle 6; 2 gait facing RIGHT 8; 3 gait facing LEFT 8; 4 wave 4; 5 jump crouch/takeoff/peak/descent/land 5; 6 harmless stumble/sit/recover 8; 7 sit and wait 6; 8 energetic run right 6; 9 think and nod 6.
+The right and left gait rows must face opposite directions. Preserve real differences in arms, legs and facial expression between consecutive frames.
+
+This must look like a CLEAN PRODUCTION SPRITE SHEET with ample transparent space separating EVERY single figure. No visible guide marks, text, captions, labels, grids, outlines around cells or watermark.
+
