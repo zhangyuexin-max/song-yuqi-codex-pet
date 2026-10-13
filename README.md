@@ -4,9 +4,13 @@ A fan-made, AI-generated chibi stage companion inspired by Song Yuqi.
 
 浅棕长发、粉色发饰、耳麦和薄荷色舞台服，包含待机、左右跑动、挥手、跳跃、失误恢复、等待、工作跑动和思考九组动画。
 
+**[⬇️ 点击下载宠物安装包（ZIP · 约 1.9 MB）](https://github.com/zhangyuexin-max/song-yuqi-codex-pet/raw/refs/heads/main/downloads/song-yuqi-stage.zip)**
+
+无需登录 GitHub。下载完成后，按下方「安装」说明解压使用。
+
 ![九组动作概览](assets/preview.png)
 
-[查看动画](assets/preview.gif) · [下载宠物安装包](downloads/song-yuqi-stage.zip) · [查看制作提示词](sources/generation-prompts.txt)
+[查看动画](assets/preview.gif) · [查看制作提示词](sources/generation-prompts.txt)
 
 ## 安装
 
